@@ -418,7 +418,7 @@ function registerPlayer( type, object ) {
 		this.seek = function( seconds ) {
 			if ( this.player !== null && seconds > 1 ) {
 				console.error('SEEKING')
-				this.player.fastSeek(seconds)
+				this.player.currentTime = seconds;
 			}
 		};
 
@@ -445,7 +445,7 @@ function registerPlayer( type, object ) {
 				}
 
 				if ( this.startTime != this.lastStartTime ) {
-					this.player.fastSeek( this.startTime );
+					this.player.currentTime = this.startTime;
 					this.lastStartTime = this.startTime;
 					this.player.play();
 				}
