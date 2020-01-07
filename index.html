@@ -1,1 +1,37 @@
-TEST
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jonathan Frakes is Gay</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@1.1.12/dist/vuetify.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <v-app>
+    <v-toolbar dark color="blue" prominent>
+      <span class="title ml-3 mr-5">
+        Cuddly Cheetah Random Scripts&nbsp;
+      </span>
+      <span class="font-weight-light">Das Unfassbare</span>
+    </v-toolbar>
+    <v-content>
+      <v-col cols="12" sm="6" md="6">
+        <v-row cols="12">
+          <v-text-field placeholder="Enter your Crap" solo v-model="text"></v-text-field>
+          <v-btn @click="randomize(text)" x-large raised>X-Faktor</v-btn>
+        </v-row>
+      <v-text-field readonly solo v-model="output"></v-text-field>
+      </v-col>
+    </v-content>
+  </v-app>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vuetify@1.1.12/dist/vuetify.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
